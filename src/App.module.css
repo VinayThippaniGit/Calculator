@@ -1,0 +1,8 @@
+.container{
+  border: 1px solid black;
+  width: 200px;
+}
+.textBox{
+  margin-top: 4px;
+  padding: 4px;
+}
