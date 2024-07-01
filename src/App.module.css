@@ -2,15 +2,18 @@
   border: 2px solid rgb(0, 120, 38);
   width: 200px;
   background-color: rgb(53, 53, 96);
+  border-radius: 10px;
 }
 .textBox{
   margin: 10px 0;
   padding: 8px;
   border-radius: 10px;
-  border: 1px solid aqua;
+  border: 1px solid white;
   background-color: rgb(0, 0, 0);
   color:white;
+  text-align: right;
 }
-.textBox:slotted{
-  background-color: white;
+.textBox:focus{
+  border: 1px solid aqua;
+  border-color: red;
 }

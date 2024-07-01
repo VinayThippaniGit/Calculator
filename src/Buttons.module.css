@@ -1,10 +1,16 @@
 .button{
-    padding: 5px 20px;
+    width: 25%;
+    height: 30px;
     margin : 4px;
     border-radius: 8px;
     background-color: rgb(15, 173, 208);
+    cursor: pointer;
+    font-weight: bold;
+}
+.button:hover{
+    background-color: rgb(125, 230, 230);
 }
 .button:active{
-    background-color: blue;
+    background-color: rgb(44, 44, 129);
     color: white;
 }
