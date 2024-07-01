@@ -1,4 +1,10 @@
 .button{
     padding: 5px 20px;
     margin : 4px;
+    border-radius: 8px;
+    background-color: rgb(15, 173, 208);
+}
+.button:active{
+    background-color: blue;
+    color: white;
 }

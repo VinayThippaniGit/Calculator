@@ -1,8 +1,16 @@
 .container{
-  border: 1px solid black;
+  border: 2px solid rgb(0, 120, 38);
   width: 200px;
+  background-color: rgb(53, 53, 96);
 }
 .textBox{
-  margin-top: 4px;
-  padding: 4px;
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid aqua;
+  background-color: rgb(0, 0, 0);
+  color:white;
+}
+.textBox:slotted{
+  background-color: white;
 }
