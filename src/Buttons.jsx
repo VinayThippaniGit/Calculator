@@ -1,17 +1,24 @@
 import styles from "./Buttons.module.css"
-const Buttons = (props) => {
-    let buttonss=props.buttonItems;
+const Buttons = ({onButtonClick}) => {
+    const buttons = [
+        'C' , '1','2',
+        '+' , '3','4',
+        '-' , '5','6',
+        '*' , '7','8',
+        '/' , '9','0',
+        '%' , '=','.'
+      ];
     return (
-        <div>
+        <div className={styles.Numbers}>
             {
-                buttonss.map(
+                buttons.map(
                     (button) => (
-                        <button className={styles.button}>{button}</button>
+                        <button key={button} className={styles.button} onClick={() => onButtonClick(button)}>{button}</button>
                     )
                 )
             }
         </div>
-    )
+    );
 
-}
-export default Buttons
+};
+export default Buttons;

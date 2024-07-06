@@ -1,15 +1,28 @@
 import styles from "./App.module.css"
 import Buttons from "./Buttons"
+import Input from "./Input";
+import { useState } from "react";
 
 function App(){
   
-  const buttons = ['1', '2', '3', '4', '5', '6', '7', '8', '9','=', '0','C', '+', '-', '*', '/', '%'];
+  let [displayValue,setVal] = useState("");
+  const onButtonClick = (val) => {
+    if(val==="C"){
+      setVal("");
+    }else if(val==="="){
+      let result=eval(displayValue);
+      setVal(result);
+    }else{
+      let UpdatedValue = displayValue + val ;
+      setVal(UpdatedValue);
+    }
+  }
   return(
     <center>
       <h1>Calculator Using ReactJs</h1>
       <div className={styles.container}>
-        <input type="text" className={styles.textBox}/>
-        <Buttons buttonItems={buttons}/>
+        <Input displayValue={displayValue}/>
+        <Buttons onButtonClick={onButtonClick}/>
       </div>
     </center>
   )

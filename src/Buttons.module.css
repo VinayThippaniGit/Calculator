@@ -1,11 +1,16 @@
 .button{
-    width: 25%;
-    height: 30px;
-    margin : 4px;
+    width: 120px;
+    height: 60px;
     border-radius: 8px;
     background-color: rgb(15, 173, 208);
     cursor: pointer;
     font-weight: bold;
+    font-size: 25px;
+}
+.Numbers{    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin:4px 15px;
 }
 .button:hover{
     background-color: rgb(125, 230, 230);

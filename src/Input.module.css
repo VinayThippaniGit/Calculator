@@ -1,0 +1,10 @@
+.textBox{
+    margin: 10px 0;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    text-align: left;
+    font-size: 25px;
+  }
